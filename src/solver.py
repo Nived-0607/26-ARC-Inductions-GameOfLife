@@ -16,7 +16,7 @@ def count_neighbors(grid, row, col):
     alive_count = 0
 
     rows = len(grid)
-    cols = len(grid[0])
+    cols = len(grid[0]) if rows > 0 else 0
 
     for r in range(row - 1, row + 2):
         for c in range(col - 1, col + 2):
